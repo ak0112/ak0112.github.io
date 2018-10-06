@@ -1,1 +1,1 @@
-Loftschool my first layout airplanet 
+Loftschool my first layout airplanet
