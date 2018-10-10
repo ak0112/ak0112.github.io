@@ -184,7 +184,6 @@ li.menu__item {
     font-weight: 700;
     line-height: 38px;
     margin-bottom: 49px;
-    /* margin-bottom: 68px; */
 }
 
 .features-item {
@@ -279,19 +278,19 @@ li.menu__item {
     bottom: 0;
 }
 
-.news-items {
+.other-items {
     width: 880px;
     margin-bottom: 50px;
 }
 
-.news-item {
+.other-item {
     display: flex;
     padding-bottom: 30px;
     margin-bottom: 30px;
     border-bottom: 2px solid #f5f5f5;
 }
 
-.news-item:last-child {
+.other-item:last-child {
     margin: 0;
     padding: 0;
     border-bottom: none;
@@ -496,7 +495,8 @@ a.pagination__next:link,
 
 .social-networks-icon:hover:first-child {
     background-color: #fff;
-} 
+}
+
 .nav-menu {
     margin-bottom: 28px;
 }
@@ -534,51 +534,141 @@ a.pagination__next:link,
 }
 
 .booking-questions-block-text {
-    width: 650px;
+    width: 630px;
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
     margin: auto;
     text-align: justify;
 }
-.booking-application{
-   
+
+.booking-application {
     font-weight: 700;
     color: #fff;
 }
 
 .booking-application:hover {
-text-decoration: none;
-color: #1348f5;
+    text-decoration: none;
+    color: #1348f5;
 }
 
-.rewiews__input{
-    background-color: #f5f5f5;
+.rewiews {
+    font-size: 14px;
     width: 700px;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    padding: 40px 70px;
+    display: block;
+    margin: 0 auto 58px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.rewiews__content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 58px;
-    text-align: center;
 }
 
-.features-item__content {
+.rewiews__content-title {
+    margin-bottom: 5px;
+}
+
+.rewiews__input-text {
     width: 100%;
-    color: #221f1f;
-    align-items: center;
-    display: inline-block;
+    height: 45px;
+    padding: 15px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
 }
 
+.rewiews__input-text:hover {
+    border: 1px solid #4b73b5;
+    outline: none;
+}
+
+.rewiews__label {
+    margin-bottom: 19px;
+    font-size: 16px;
+}
+
+.rewiews__input {
+    width: 270px;
+    float: left;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.form__input:last-child {
+    margin-right: 0;
+}
+
+.rewiews__textarea {
+    padding: 10px;
+    resize: none;
+    height: 90px;
+}
+
+.rewiews__textarea-label {
+    flex: 1;
+}
+
+.submit {
+    background-color: #1348f5;
+}
 
 .crew-contents {
-    width: 250px;
+    width: 100%;
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    padding: 45px 0;
     margin-bottom: 50px;
 }
-.crew-item__content {
+
+.team__img-wrap {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 17px;
+}
+
+.team__img-wrap:after {
+    content: "";
+    background: rgba(75, 115, 181, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.c-team__item {
+    width: 270px;
+    display: inline-block;
+}
+
+.c-team__img {
+    object-fit: contain;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.c-team__img-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.item-desc {
     width: 100%;
     color: #221f1f;
     align-items: center;
@@ -588,187 +678,43 @@ color: #1348f5;
     line-height: 21px;
 }
 
+.crew-employee-name {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 0 5px;
+}
+
 .crew-item__content-title {
     color: #4b73b5;
     font-weight: 700;
-    margin-bottom: 5px;
+    padding: 0 0 10px;
 }
-.features-item__content-text {
+
+.crew-item__content-text {
     font-weight: 300;
-    color: #212121;
-    margin-bottom: 20px;
-}
-.employee-name{
-color: #000;
 }
 
-.crew-employee-name{
-    font-size: 18px;
-font-weight: 700;
-}
-.avatar-employees {
-    margin-right: 20px;
-    width: 33,3%;
-    height: 33,3%;
-    border-radius: 50%;
-    overflow: hidden;
-    flex-shrink: 0;
-    background-image: url(img2/shutterstock_362394002.jpg.png); /* Путь к фоновому изображению */
-    background-color: #2c08cc; /* Цвет фона */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .form{
-    font-size: 14px;
-    width: 700px;
-    background-color: #f5f5f5;
-    border-radius: 3px;
-    padding: 40px 70px;
-    display: block;
-     margin: 0 auto;
-     margin-bottom:  58px;
-
-}
-*{
-    box-sizing: border-box;
-}
-
-.form__field-title{
-    margin-bottom: 5px;
-}
-
-.form__input-text{
+.content-partner {
     width: 100%;
-    height: 45px;
-    padding: 15px 10px;
-    border: none;  1px solid transparent;  
-    border-radius: 3px;
+    display: flex;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 50px;
 }
 
-.form__input-text:focus{
-    border: 1px solid #4b73b5;
-    outline: none;
-}
-.form__input-text:hover{
-    border: 1px solid #4b73b5;
-    outline: none;
-}
-
-
-.form__row{
-margin-bottom: 19px;
-display:flex;
-}
-
-.form__input{
-    width: 270px;
-    float: left;
-    flex: 1;
-    margin-right: 20px;
-}
-.form__input:last-child{
-    margin-right: 0;
-}
-
-.form__radio{
+.content-partner__item {
+    width: 170px;
     display: inline-block;
-    vertical-align: middle;
-    margin-right: 20px;
-    cursor: pointer;
-    position: relative;
-}
-.form__radio-text{
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 14px;
 }
 
-.form__radio-elem:checked + .form__radio-fake{
-    border:1px solid #4b73b5;
-    } 
+.content-partner__list {}
 
-
-.form__radio-elem:checked + .form__radio-fake:after{
-   width: 8px;
-   height: 8px;
-}     
-
-.form__radio-fake{
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 50%;
-    border: 1px solid #cbcbcb;
-    position: relative;
-    transition: border .2s;
+/* .content-partner__item-link:hover img{
+    filter: grayscale(0)
 }
-
-.form__radio-fake:after{
-content: "";
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 0;
-height: 0;
-border-radius: 50%;
-background: #4b73b5;
-transition: all 0.2s;
-flex-shrink: 0;
-}
-
-.form__textarea{
-    padding: 10px;
-    resize: none;
-    height: 90px;
-}
-
-.form__textarea-label{
-    flex: 1;
-}
-
-.form__row-col--left{
-    float: left;
-}
-.form__row-col{
-       flex: 1;
-}
-.form__row-col--right{
-    text-align: right;
-}
-.form__radio-elem{
-     display: none;
+.content-partner__item-link{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 } */
