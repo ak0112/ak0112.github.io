@@ -183,7 +183,7 @@ li.menu__item {
     font-size: 49px;
     font-weight: 700;
     line-height: 38px;
-    margin-bottom: 49px;
+    margin-bottom: 39px;
 }
 
 .features-item {
@@ -568,6 +568,7 @@ a.pagination__next:link,
 
 .rewiews__content {
     display: flex;
+    justify-content: space-between;
 }
 
 .rewiews__content-title {
@@ -580,6 +581,7 @@ a.pagination__next:link,
     padding: 15px 10px;
     border: 1px solid transparent;
     border-radius: 3px;
+    font-size: 14px;
 }
 
 .rewiews__input-text:hover {
@@ -620,7 +622,6 @@ a.pagination__next:link,
 
 .button-sent {
     background-color: #4b73b5;
-    ;
     width: 150px;
     height: 50px;
     color: #ffffff;
@@ -629,7 +630,6 @@ a.pagination__next:link,
     line-height: 50px;
     text-transform: uppercase;
     letter-spacing: 2.4px;
-    padding: 0;
     border-radius: 5px;
     border: 0;
     padding: 0;
@@ -670,10 +670,11 @@ a.pagination__next:link,
 }
 
 .c-team__item {
-    width: 270px;
+    width: 260px;
     display: inline-block;
+    vertical-align: top;
+    padding: 20px 15px;
 }
-
 .c-team__img {
     object-fit: contain;
     display: block;
@@ -722,20 +723,68 @@ a.pagination__next:link,
 .content-partner {
     width: 100%;
     display: flex;
-    text-align: center;
-    vertical-align: top;
+    flex-wrap: wrap;
     margin-bottom: 50px;
 }
 
 .content-partner__item {
-    width: 170px;
-    display: inline-block;
+    width: calc(100%/12*4 - 20px);
+    filter: grayscale(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
 }
-
-.content-partner__item {
-    filter: grayscale(100%)
-}
-
 .content-partner__item:hover {
     filter: grayscale(0)
+}
+
+ul.content-partner__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+}
+
+
+
+.rewiews__radio{
+    display: flex;
+    position: relative;
+    margin-right: 15px;
+    align-items: center;
+}
+.rewiews__radio-input{
+ position: absolute;
+ left: -9999px;
+ top: 0;
+}
+.rewiews__radio-fake{
+    width: 18px;
+    height: 18px;
+    border: 1px solid #c9c9c9;;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 5px;
+}
+.rewiews__radio-fake::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-radius: 50%;
+    background: #4b73b5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.3s;
+}
+
+.rewiews__radio-input:checked + .rewiews__radio-fake{
+    border-color: #4b73b5;
+}
+.rewiews__radio-input:checked + .rewiews__radio-fake::before{
+    width: 8px;
+    height: 8px;
 }
