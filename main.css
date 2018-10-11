@@ -504,7 +504,16 @@ a.pagination__next:link,
 .nav-menu__list {
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    list-style-type: none; 
+    opacity: 0.8;
+    color: #221f1f;
+    /* font-family: "Roboto - Light Italic"; */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.nav-menu__list:first-child{
+    color: #1c5bc3;
 }
 
 .nav-menu__item {
@@ -517,7 +526,19 @@ a.pagination__next:link,
     content: "/";
     display: inline-block;
     vertical-align: middle;
+    color: #221f1f;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .booking-questions {
     margin-bottom: 58px;
