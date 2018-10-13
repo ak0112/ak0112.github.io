@@ -183,7 +183,7 @@ li.menu__item {
     width: 24px;
     height: 18px;
     background-position: center center;
-    background: url('./img2/team_icon.png') center center;
+    background: url('./img2/main_icon.png') center center;
     background-repeat: no-repeat;
     display: inline-block;
     vertical-align: middle;
@@ -205,8 +205,7 @@ li.menu__item {
     background-image: url('./img2/black_2feed_icon.png')
 }
 
-.menu__link--crew:before,
-    {
+.menu__link--crew:before{
     background-image: url('./img2/team_icon.png')
 }
 
