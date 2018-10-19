@@ -183,16 +183,19 @@ body {
     transition: opacity 0.7s;
     opacity: 0;
 }
-.schedule__time{
-color: #1c5bc3;
-font-family: Roboto;
-font-size: 14px;
-font-weight: 700;
-line-height: 25px;
+
+.schedule__time {
+    color: #1c5bc3;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
 }
-.schedule__notwork{
+
+.schedule__notwork {
     color: #221f1f;
 }
+
 .schedule:before {
     display: block;
     content: "";
@@ -228,7 +231,6 @@ line-height: 25px;
 }
 
 .features-item {
-    width: 272px;
     text-align: center;
     padding: 29px 33px;
     margin-bottom: 30px;
@@ -262,7 +264,6 @@ line-height: 25px;
 
 .features-item__content-desc {
     color: #221f1f;
-    ;
     line-height: 30px;
     margin-bottom: 15px;
 }
@@ -297,27 +298,68 @@ line-height: 25px;
     font-size: 60%;
 }
 
-.social-networks {
-    color: #2d1d1d;
-    font-size: 14px;
-    font-weight: 700;
+.socials_aside {
     text-align: center;
-    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
-.social-networks-list {
-    display: flex;
+.socials_aside .socials__list {
     justify-content: center;
 }
 
-.social-networks-icon {
-    display: flex;
-    width: 15px;
-    height: 13px;
-    margin: 0 10px 0 8px;
-    line-height: 100%;
-    text-align: center;
-    position: relative;
+.socials_aside .socials__item {
+    background: transparent;
+}
+
+.socials_aside .socials__item:hover {
+    background: #d2def3;
+}
+
+.socials_aside .socials__title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.socials__icon {
+    background: url('./img2/css_sprites.png') center center no-repeat;
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.socials__icon:hover {
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.socials__icon-link-vk {
+    width: 20px;
+    height: 22px;
+    background-position: -93px -3px;
+}
+
+.socials__icon-link-fb {
+    width: 20px;
+    height: 22px;
+    background-position: -1px -6px;
+}
+
+.socials__icon-link-google {
+    width: 20px;
+    height: 22px;
+    background-position: -125px -4px;
+}
+
+.socials__icon-link-mail {
+    width: 20px;
+    height: 22px;
+    background-position: -61px -4px;
+}
+
+.socials__icon-link-tw {
+    width: 20px;
+    height: 22px;
+    background-position: -29px -4px;
 }
 
 .nav-block {
@@ -602,7 +644,7 @@ a.pagination__next:link,
 
 .footer_text_link:hover {
     text-decoration: none;
-    color: #1348f5;
+    color: #ccc;
 }
 
 .school {
@@ -669,16 +711,18 @@ a.pagination__next:link,
     font-weight: 700;
     color: #fff;
 }
-.contacts__phone{
-color: #ffffff;
+
+.contacts__phone {
+    color: #ffffff;
     font-size: 21px;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
 }
+
 .booking-application:hover {
     text-decoration: none;
-    color: #1348f5;
+    color: #ccc;
 }
 
 .rewiews {
@@ -907,7 +951,12 @@ color: #ffffff;
 .content-partner__item {
     display: flex;
     justify-content: center;
+    filter: grayscale(100%);
     margin-bottom: 50px;
+}
+
+.content-partner__item:hover {
+    filter: grayscale(0)
 }
 
 .title--crew {
@@ -918,33 +967,3 @@ color: #ffffff;
     line-height: 38px;
     text-transform: uppercase;
 }
-
-/* 
-.schedule:before {
-    display: block;
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    position: absolute;
-    top: -10px;
-    right: 6px;
-    transform: rotate(45deg);
-    box-shadow: -3px -3px 3px 0 rgba(23, 59, 117, 0.35);
-}
-
-.header-contacts__time:hover .schedule {
-    left: initial;
-    opacity: 1;
-    right: 0;
-}
-
-.schedule:after {
-    display: block;
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    content: "";
-    top: -20px;
-    right: 0;
-} */
